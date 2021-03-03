@@ -1,10 +1,88 @@
-span {
-  color: blue;
+body {
+  width: 100%;
 }
-/*
-=rotated-text($num-letters: 100, $angle-span: 180deg, $angle-offset: 0deg)
-  $angle-per-char: $angle-span / $num-letters;
-  @for $i from 1 through $num-letters
-    .char#{$i} 
-      +transform(rotate($angle-offset + $angle-per-char * $i))
-*/
+
+h1 span {
+  margin-left: 45%;
+  margin-top: 5%;
+  background-color: lightblue;
+  font: 26px Monaco, MonoSpace;
+  height: 200px;
+  position: absolute;
+  width: 20px;
+  left: 0;
+  top: 0;
+  transform-origin: bottom center;
+}
+
+span:nth-child(1) {
+  transform: rotate(200deg);
+}
+
+span:nth-child(2) {
+  transform: rotate(220deg);
+}
+
+span:nth-child(3) {
+  transform: rotate(240deg);
+}
+
+span:nth-child(4) {
+  transform: rotate(260deg);
+}
+
+span:nth-child(5) {
+  transform: rotate(280deg);
+}
+
+span:nth-child(6) {
+  transform: rotate(300deg);
+}
+
+span:nth-child(7) {
+  transform: rotate(320deg);
+}
+
+span:nth-child(8) {
+  transform: rotate(340deg);
+}
+
+span:nth-child(9) {
+  transform: rotate(0deg);
+}
+
+span:nth-child(10) {
+  transform: rotate(20deg);
+}
+
+span:nth-child(11) {
+  transform: rotate(40deg);
+}
+
+span:nth-child(12) {
+  transform: rotate(60deg);
+}
+
+span:nth-child(13) {
+  transform: rotate(80deg);
+}
+
+span:nth-child(14) {
+  transform: rotate(100deg);
+}
+
+span:nth-child(15) {
+  transform: rotate(120deg);
+}
+
+span:nth-child(16) {
+  transform: rotate(140deg);
+}
+
+span:nth-child(17) {
+  transform: rotate(160deg);
+}
+
+span:nth-child(18) {
+  transform: rotate(180deg);
+}
