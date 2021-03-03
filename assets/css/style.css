@@ -2,18 +2,120 @@ body {
   width: 100%;
 }
 
+img {
+  margin-left: 22.8%;
+  position: absolute;
+  height: 600px;
+}
+
 .container {
-  width: 80%;
-  height: 50vw;
-  margin: auto;
-  background-color: gray;
+  position: relative;
+}
+
+@-webkit-keyframes fade-external {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-external {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes fade-internal {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-internal {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+img#start {
+  z-index: -1;
+  opacity: 0;
+  -webkit-animation: fade-external 7s ease-in forwards;
+          animation: fade-external 7s ease-in forwards;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+img#finish {
+  z-index: -2;
+  opacity: 1;
 }
 
 h1 span {
-  margin-left: 45%;
-  margin-top: 5%;
-  background-color: lightblue;
-  font: 26px Monaco, MonoSpace;
+  font: 26px "Montserrat", sans-serif;
+  opacity: 0;
+  margin-left: 45.2%;
+  margin-top: 7.7%;
+  color: #67c3d1;
   height: 200px;
   position: absolute;
   width: 20px;
@@ -21,6 +123,10 @@ h1 span {
   top: 0;
   -webkit-transform-origin: bottom center;
           transform-origin: bottom center;
+  -webkit-animation: fade-internal 7s ease-in forwards;
+          animation: fade-internal 7s ease-in forwards;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
 }
 
 span:nth-child(1) {

@@ -2,24 +2,86 @@ body {
   width: 100%;
 }
 
+img {
+  margin-left: 22.8%;
+  position: absolute;
+  height: 600px;
+}
+
 .container {
-  width: 80%;
-  height: 50vw;
-  margin: auto;
-  background-color: gray;
+  position: relative;
+}
+
+@keyframes fade-external {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-internal {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+img#start {
+  z-index: -1;
+  opacity: 0;
+  animation: fade-external 7s ease-in forwards;
+  animation-delay: 0.5s;
+}
+
+img#finish {
+  z-index: -2;
+  opacity: 1;
 }
 
 h1 span {
-  margin-left: 45%;
-  margin-top: 5%;
-  background-color: lightblue;
-  font: 26px Monaco, MonoSpace;
+  font: 26px "Montserrat", sans-serif;
+  opacity: 0;
+  margin-left: 45.2%;
+  margin-top: 7.7%;
+  color: #67c3d1;
+  // background-color: gray;
+  // font: 26px Monaco, MonoSpace;
   height: 200px;
   position: absolute;
   width: 20px;
   left: 0;
   top: 0;
   transform-origin: bottom center;
+  animation: fade-internal 7s ease-in forwards;
+  animation-delay: 0.5s;
   // transform: rotate(360deg);
   // transition: transform 0.7s linear;
 }
